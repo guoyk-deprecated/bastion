@@ -6,7 +6,7 @@ import (
 	"github.com/hashicorp/consul/api"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 	"google.golang.org/grpc"
 	"os"
 	"time"

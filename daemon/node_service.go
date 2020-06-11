@@ -2,8 +2,8 @@ package daemon
 
 import (
 	"github.com/jinzhu/copier"
-	"github.com/yankeguo/bastion/daemon/models"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/daemon/models"
+	"github.com/guoyk93/bastion/types"
 	"golang.org/x/net/context"
 	"strings"
 )

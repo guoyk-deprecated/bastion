@@ -2,7 +2,7 @@ package recorder
 
 import (
 	"github.com/rs/zerolog/log"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 	"io"
 	"time"
 )

@@ -2,7 +2,7 @@ package utils
 
 import (
 	"encoding/binary"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 	"io"
 )
 

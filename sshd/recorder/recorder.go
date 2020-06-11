@@ -3,9 +3,9 @@ package recorder
 import (
 	"context"
 	"github.com/rs/zerolog/log"
-	"github.com/yankeguo/bastion/sshd/sandbox"
-	"github.com/yankeguo/bastion/types"
-	"github.com/yankeguo/bastion/utils"
+	"github.com/guoyk93/bastion/sshd/sandbox"
+	"github.com/guoyk93/bastion/types"
+	"github.com/guoyk93/bastion/utils"
 	"io"
 	"time"
 )

@@ -10,10 +10,10 @@ import (
 
 	"github.com/olivere/elastic"
 
-	"github.com/yankeguo/bastion/daemon/models"
+	"github.com/guoyk93/bastion/daemon/models"
 
-	"github.com/yankeguo/bastion/types"
-	"github.com/yankeguo/bastion/utils"
+	"github.com/guoyk93/bastion/types"
+	"github.com/guoyk93/bastion/utils"
 	"golang.org/x/net/context"
 )
 

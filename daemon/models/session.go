@@ -2,7 +2,7 @@ package models
 
 import (
 	"github.com/jinzhu/copier"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 )
 
 type Session struct {

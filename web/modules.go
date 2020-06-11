@@ -3,7 +3,7 @@ package web
 import (
 	"github.com/novakit/nova"
 	"github.com/pkg/errors"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

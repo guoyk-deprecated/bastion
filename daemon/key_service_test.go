@@ -4,7 +4,7 @@ import (
 	"context"
 	"crypto/rand"
 	"crypto/rsa"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 	"golang.org/x/crypto/ssh"
 	"google.golang.org/grpc"
 	"testing"

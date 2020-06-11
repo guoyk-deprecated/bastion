@@ -3,6 +3,8 @@
 COMMAND="$1"
 VERSION="$2"
 
+set -eux
+
 if [ -z "${COMMAND}" ]
 then
   COMMAND="help"
@@ -22,11 +24,11 @@ build_grpc () {
 }
 
 build_ui () {
-    cd ${SRC_ROOT}/web/ui && yarn build
+    cd ${SRC_ROOT}/web/ui && npm install --registry=https://registry.npm.taobao.org && npm run build
     cp -f ${SRC_ROOT}/resources/package.json ${SRC_ROOT}/web/public/package.json
-    sed -i "" -e "s/__VERSION__/${VERSION}/g" ${SRC_ROOT}/web/public/package.json
-    sed -i "" -e "s/\\=\\/static/\\=\\/\\/unpkg.com\\/bastion-assets@1.0.${VERSION}\\/static/g" ${SRC_ROOT}/web/public/index.html
-    cd ${SRC_ROOT}/web/public && yarn publish
+    sed -i "s/__VERSION__/${VERSION}/g" ${SRC_ROOT}/web/public/package.json
+    sed -i "s/\\=\\/static/\\=\\/\\/cdn.jsdelivr.net\\/npm\\/guoyk93-bastion-assets@1.0.${VERSION}\\/static/g" ${SRC_ROOT}/web/public/index.html
+    cd ${SRC_ROOT}/web/public && npm publish
 }
 
 build_binfs () {
@@ -36,14 +38,14 @@ build_binfs () {
 build_cmd () {
     rm -rf ${SRC_ROOT}/build
     mkdir -p ${SRC_ROOT}/build
-    for ARCH in "amd64"
+    for ARCH in "amd64" "arm64"
     do
-        for OS in "darwin" "linux"
+        for OS in "linux"
         do
             for CMD in $(ls -1 ${SRC_ROOT}/cmd)
             do
                 echo "building ${CMD}-${OS}-${ARCH}..."
-                GOOS=${OS} GOARCH=${ARCH} go build -o ${SRC_ROOT}/build/${CMD}-${OS}-${ARCH} github.com/yankeguo/bastion/cmd/${CMD}
+                GOOS=${OS} GOARCH=${ARCH} GO111MODULE=off go build -o ${SRC_ROOT}/build/${CMD}-${OS}-${ARCH} github.com/guoyk93/bastion/cmd/${CMD}
             done
         done
     done
@@ -67,7 +69,6 @@ case "${COMMAND}" in
             ;;
 
         all)
-            build_grpc
             build_ui
             build_binfs
             build_cmd

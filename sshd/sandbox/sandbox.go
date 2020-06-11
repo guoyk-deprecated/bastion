@@ -1,6 +1,6 @@
 /**
  * sandbox/sandbox.go
- * Copyright (c) 2018 Yanke Guo <guoyk.cn@gmail.com>
+ * Copyright (c) 2018 Guo Y.K. <hi@guoyk.net>
  *
  * This software is released under the MIT License.
  * https://opensource.org/licenses/MIT

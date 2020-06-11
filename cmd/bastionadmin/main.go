@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/urfave/cli"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 	"golang.org/x/crypto/ssh"
 	"google.golang.org/grpc"
 )
@@ -28,7 +28,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "bastion"
 	app.Description = "bastion command-line interface"
-	app.Author = "Yanke Guo <guoyk.cn@gmail.com>"
+	app.Author = "Guo Y.K. <hi@guoyk.net>"
 	app.Flags = []cli.Flag{
 		cli.StringFlag{Name: "endpoint", Usage: "bastiond rpc address", Value: "127.0.0.1:9777"},
 	}

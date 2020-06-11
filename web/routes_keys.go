@@ -4,7 +4,7 @@ import (
 	"github.com/novakit/nova"
 	"github.com/novakit/view"
 	"github.com/pkg/errors"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 	"golang.org/x/crypto/ssh"
 	"strings"
 )

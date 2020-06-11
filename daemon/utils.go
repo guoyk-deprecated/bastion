@@ -10,8 +10,8 @@ import (
 
 	"github.com/olivere/elastic"
 	"github.com/rs/zerolog/log"
-	"github.com/yankeguo/bastion/types"
-	"github.com/yankeguo/bastion/utils"
+	"github.com/guoyk93/bastion/types"
+	"github.com/guoyk93/bastion/utils"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"

@@ -3,7 +3,7 @@ package daemon
 import (
 	"crypto/rand"
 	"encoding/hex"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/types"
 	"google.golang.org/grpc"
 	"log"
 	"os"

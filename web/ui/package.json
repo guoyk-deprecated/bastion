@@ -2,7 +2,7 @@
   "name": "ui",
   "version": "1.0.0",
   "description": "bastion UI project",
-  "author": "Yanke Guo <guoyk.cn@gmail.com>",
+  "author": "Guo Y.K. <hi@guoyk.net>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --progress --config build/webpack.dev.conf.js",

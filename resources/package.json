@@ -1,5 +1,5 @@
 {
-  "name": "bastion-assets",
+  "name": "guoyk93-bastion-assets",
   "version": "1.0.__VERSION__",
   "description": "assets for bastion",
   "main": "index.html",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yankeguo/bastion.git"
+    "url": "git+https://github.com/guoyk93/bastion.git"
   },
   "keywords": [
     "bastion"
   ],
-  "author": "Yanke Guo <guoyk.cn@gmail.com>",
+  "author": "Guo Y.K. <hi@guoyk.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yankeguo/bastion/issues"
+    "url": "https://github.com/guoyk93/bastion/issues"
   },
-  "homepage": "https://github.com/yankeguo/bastion#readme"
+  "homepage": "https://github.com/guoyk93/bastion#readme"
 }

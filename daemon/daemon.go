@@ -10,8 +10,8 @@ import (
 	"github.com/grpc-ecosystem/go-grpc-middleware"
 	"github.com/grpc-ecosystem/go-grpc-middleware/recovery"
 	"github.com/olivere/elastic"
-	"github.com/yankeguo/bastion/daemon/models"
-	"github.com/yankeguo/bastion/types"
+	"github.com/guoyk93/bastion/daemon/models"
+	"github.com/guoyk93/bastion/types"
 	"google.golang.org/grpc"
 )
 
